@@ -1,2 +1,1 @@
-# Loruki-website
-Loruki-website
+Thanks Brad Traversy - https://www.traversymedia.com/
