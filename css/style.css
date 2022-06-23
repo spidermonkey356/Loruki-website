@@ -2,6 +2,9 @@
 
 :root {
 	--primary-color: #047aed;
+	--secondary-color: #1c3fa8;
+	--dark-color: #002240;
+	--light-color: #f4f4f4;
 }
 
 * {
@@ -135,7 +138,55 @@ img {
 .stats {
 	padding-top: 100px;
 
-	border: 2px solid lightcoral;
+	/* border: 2px solid lightcoral; */
+}
+
+.stats-heading {
+	max-width: 500px;
+	margin: auto;
+
+	/* border: 2px solid saddlebrown; */
+}
+
+.stats h3 {
+	/* border: 2px solid saddlebrown; */
+}
+
+.stats .grid h3 {
+	font-size: 35px;
+
+	/* border: 2px solid lightgreen;   */
+}
+
+.stats .grid p {
+	font-size: 20px;
+	font-weight: bold;
+
+	/* border: 2px solid lightsalmon; */
+}
+
+/* CLI */
+.cli .grid {
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+
+	/* border: 2px solid lightgreen; */
+}
+
+.cli .grid > *:first-child {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+
+	/* border: 2px solid chocolate; */
+}
+
+/* Cloud */
+
+.cloud .grid {
+	grid-template-columns: 4fr, 3fr;
+
+	/* border: 2px solid lightcoral; */
 }
 
 .showcase-form input[type="text"],
@@ -164,29 +215,6 @@ img {
 	margin: 10px;
 
 	/* border: 2px solid firebrick; */
-}
-
-.btn {
-	display: inline-block;
-	padding: 10px 30px;
-	cursor: pointer;
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
-	border-radius: 5px;
-
-	/* border: 1.5px solid lightcoral; */
-}
-
-.btn-outline {
-	background-color: transparent;
-	border: 1px #fff solid;
-}
-
-.btn:hover {
-	transform: scale(0.98);
-
-	/* border: 1.5px solid lightgreen; */
 }
 
 .flex {
