@@ -131,6 +131,13 @@ img {
 	-ms-transform: skewY(-3deg);
 }
 
+/* Stats */
+.stats {
+	padding-top: 100px;
+
+	border: 2px solid lightcoral;
+}
+
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
 	border: 0;
@@ -198,4 +205,9 @@ img {
 	height: 100%;
 
 	/* border: 2px solid tan; */
+}
+
+.grid-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
